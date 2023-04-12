@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Aufgaben und Lernmaterialien: Grundlegende Befehle</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="unterseite.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <h2>Themenbereiche</h2>
+            <ul>
+                <li><a href="grundlegende-befehle.html">Grundlegende Befehle</a></li>
+                <li><a href="dateirechte.html">Dateirechte</a></li>
+                <!-- Fügen Sie hier Links zu weiteren Themenbereichen hinzu -->
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1>Grundlegende Befehle</h1>
+            </header>
+            <div class="task">
+                <h2>Aufgabe 1: Verzeichnis wechseln</h2>
+                <p>Lernmaterial: <a href="https://example.com/tutorial-1" class="lernmaterial">Tutorial 1</a></p>
+                <p>Frage: Wie wechseln Sie in das Verzeichnis /home/user?</p>
+                <input type="text" class="input-field" id="task1" placeholder="Geben Sie die Lösung ein">
+                <button class="button" id="task1-button" onclick="checkAnswer('task1', ['cd /home/user', 'cd /home/user/'])">Lösung prüfen</button>
+                <p id="task1-result"></p>
+            </div>
+            <div class="task">
+                <h2>Aufgabe 2: Aktuelles Verzeichnis anzeigen</h2>
+                <p>Lernmaterial: <a href="https://example.com/tutorial-1" class="lernmaterial">Tutorial 2</a></p>
+                <p>Frage: Wie zeigen Sie das aktuelle Verzeichnis an?</p>
+                <input type="text" class="input-field" id="task2" placeholder="Geben Sie die Lösung ein">
+                <button class="button" id="task2-button" onclick="checkAnswer('task2', 'pwd')">Lösung prüfen</button>
+                <p id="task2-result"></p>
+            </div>
+            <!-- Weitere Aufgaben hier hinzufügen -->
+            <div>
+                <button class="button" onclick="resetSolutions()">Alle Lösungen zurücksetzen</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
