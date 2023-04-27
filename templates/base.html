@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block page_title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    {% block js_file %}{% endblock %}
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <h2><a href="/">Themenbereiche</a></h2>
+            <ul>
+                <li><a href="/grundlegende-befehle">Grundlegende Befehle</a></li>
+                <li><a href="/dateihandling">Mit Dateien Arbeiten</a></li>
+                <!-- Fügen Sie hier Links zu weiteren Themenbereichen hinzu -->
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1>{% block first_title %}{% endblock %}</h1>
+            </header>
+			{% block main %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>

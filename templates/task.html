@@ -1,0 +1,10 @@
+<div class="task">
+    <h2>Aufgabe {{ task.number }}: {{ task.title }}</h2>
+    {% if task.tutorial %}
+      <p>Lernmaterial: <a href="{{ task.tutorial }}" class="lernmaterial">Tutorial Aufgabe {{ task.number }}</a></p>
+    {% endif %}
+    <p>Frage: {{ task.question }}</p>
+    <input type="text" class="input-field" id="{{ task.input_id }}" placeholder="Geben Sie die Lösung ein">
+    <button class="button" id="{{ task.button_id }}" onclick="checkAnswer('{{ task.input_id }}', {{ task.answers|tojson }})">Lösung prüfen</button>
+    <p id="{{ task.result_id }}"></p>
+</div>
