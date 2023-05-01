@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Der Linux-Befehl ls: Dateien und Verzeichnisse auflisten</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <h2>Themenbereiche</h2>
+            <ul>
+                <li><a href="../aufgaben/grundlegende-befehle.html">Grundlegende Befehle</a></li>
+                <li><a href="../aufgaben/dateihandling.html">Mit Dateien Arbeiten</a></li>
+                <!-- Fügen Sie hier Links zu weiteren Themenbereichen hinzu -->
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1>Der Linux-Befehl ls: Dateien und Verzeichnisse auflisten</h1>
+            </header>
+            <p>Der ls-Befehl (kurz für "list", dt. "auflisten") ist ein grundlegendes Werkzeug zum Anzeigen von Dateien und Verzeichnissen in einem Linux-Dateisystem. In diesem Artikel erfahren Sie, wie der ls-Befehl funktioniert und wie Sie ihn effektiv nutzen können.</p>
+            <h2>Grundlagen des ls-Befehls</h2>
+            <p>Der ls-Befehl wird verwendet, um den Inhalt eines Verzeichnisses aufzulisten. Standardmäßig zeigt ls den Inhalt des aktuellen Verzeichnisses an. Sie können jedoch auch den Pfad zu einem anderen Verzeichnis angeben, um dessen Inhalt anzuzeigen.</p>
+<code class="code-box">
+ls [Optionen] [Verzeichnis]
+</code>
+<h2>Wichtige Optionen für den ls-Befehl</h2>
+<ul>
+    <li><strong>-l</strong>: Zeigt den Inhalt des Verzeichnisses in einem detaillierten, tabellarischen Format an. Informationen wie Berechtigungen, Besitzer, Größe und Änderungsdatum werden angezeigt.
+    <br>
+    <li><strong>-a</strong>: Zeigt alle Dateien und Verzeichnisse an, einschließlich versteckter Dateien und Verzeichnisse, die mit einem Punkt (.) beginnen.
+    <br>
+    <li><strong>-h</strong>: Zeigt Dateigrößen in einem "human-readable" Format an, z.B. 1K, 234M, 2G usw.
+    <br>
+    <li><strong>-t</strong>: Sortiert die Dateien und Verzeichnisse nach dem Änderungsdatum, wobei die neuesten zuerst angezeigt werden.
+    <br>
+    <li><strong>-r</strong>: Kehrt die Reihenfolge der Dateien und Verzeichnisse um, sodass sie in umgekehrter Reihenfolge angezeigt werden.
+</ul>
+<h2>Beispiele für den ls-Befehl</h2>
+<ul>
+    <li>Listen Sie den Inhalt des aktuellen Verzeichnisses auf:<br><code class="code-box">ls</code></li>
+    <br>
+    <li>Listen Sie den Inhalt des Verzeichnisses /etc auf:<br><code class="code-box">ls /etc</code></li>
+    <br>
+    <li>Zeigen Sie alle Dateien und Verzeichnisse, einschließlich versteckter Dateien, im aktuellen Verzeichnis an:<br><code class="code-box">ls -a</code></li>
+</ul>
+<h2>Fazit</h2>
+<p>Der ls-Befehl ist ein grundlegendes Werkzeug zum Anzeigen von Dateien und Verzeichnissen in einem Linux-Dateisystem. Durch die Kombination verschiedener Optionen können Sie genau steuern, welche Informationen angezeigt werden und wie sie sortiert werden. Experimentieren Sie mit den verschiedenen Optionen, um eine effektive und informative Dateiliste zu erstellen.</p>
+<div>
+    <br>
+    <a class="button" href="../aufgaben/grundlegende-befehle.html">Zurück zur Aufgabe</a>
+</div>
+</main>
+</div>
+</body>
+</html>

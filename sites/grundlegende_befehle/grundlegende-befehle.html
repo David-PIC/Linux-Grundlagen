@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block page_title %}Grundlegende Befehle{% endblock %}
+{% block first_title %}Grundlegende Befehle{% endblock %}
+{% block js_file %}<script src="{{ url_for('static', filename='main.js') }}" defer></script>{% endblock %}
+{% block main %}
+{% for task in tasks %}
+  {% include "task.html" %}
+{% endfor %}
+<div>
+<button class="button" onclick="resetSolutionsWithDataPrefix()" data-prefix="gb">Alle Lösungen zurücksetzen</button>
+</div>
+{% endblock %}

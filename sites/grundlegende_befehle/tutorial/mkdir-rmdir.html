@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Der Linux-Befehl pwd: Aktuelles Verzeichnis anzeigen</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <h2>Themenbereiche</h2>
+            <ul>
+                <li><a href="../aufgaben/grundlegende-befehle.html">Grundlegende Befehle</a></li>
+                <li><a href="../aufgaben/dateihandling.html">Mit Dateien Arbeiten</a></li>
+                <!-- Fügen Sie hier Links zu weiteren Themenbereichen hinzu -->
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <h1>Die Linux-Befehle mkdir und rmdir: Verzeichnisse erstellen und entfernen</h1>
+            </header>
+            <p>In diesem Artikel erfahren Sie, wie Sie mit den Linux-Befehlen mkdir und rmdir Verzeichnisse erstellen und entfernen können. Diese grundlegenden Befehle sind unerlässlich, um das Dateisystem effektiv zu verwalten.</p>
+            <h2>Der Befehl mkdir: Verzeichnisse erstellen</h2>
+        <p>Der mkdir-Befehl (kurz für "make directory", dt. "Verzeichnis erstellen") wird verwendet, um neue Verzeichnisse im Dateisystem zu erstellen. Um ein Verzeichnis zu erstellen, geben Sie <code class="code-box">mkdir</code> gefolgt vom Namen des gewünschten Verzeichnisses ein:</p>
+        <code class="code-box">mkdir [Optionen] Verzeichnis</code>
+
+        <h3>Wichtige Optionen für den mkdir-Befehl</h3>
+        <ul>
+            <li><strong>-p</strong>: Erstellt alle notwendigen übergeordneten Verzeichnisse, falls sie noch nicht existieren.<br><code class="code-box">mkdir -p /pfad/zum/neuen/Verzeichnis</code></li>
+            <br>
+            <li><strong>-m</strong>: Setzt die Zugriffsrechte (Dateirechte) für das neu erstellte Verzeichnis.<br><code class="code-box">mkdir -m 755 neues_verzeichnis</code></li>
+        </ul>
+        <h2>Der Befehl rmdir: Verzeichnisse entfernen</h2>
+        <p>Der rmdir-Befehl (kurz für "remove directory", dt. "Verzeichnis entfernen") wird verwendet, um leere Verzeichnisse im Dateisystem zu löschen. Um ein Verzeichnis zu löschen, geben Sie <code class="code-box">rmdir</code> gefolgt vom Namen des zu löschenden Verzeichnisses ein:</p>
+        <code class="code-box">rmdir [Optionen] Verzeichnis</code>
+
+        <h3>Wichtige Optionen für den rmdir-Befehl</h3>
+        <ul>
+            <li><strong>--ignore-fail-on-non-empty</strong>: Ignoriert Fehlermeldungen, wenn das Verzeichnis nicht leer ist.<br><code class="code-box">rmdir --ignore-fail-on-non-empty Verzeichnis</code></li>
+            <br>
+            <li><strong>-p</strong>: Entfernt das Verzeichnis und alle übergeordneten Verzeichnisse, wenn sie leer sind.<br><code class="code-box">rmdir -p /pfad/zum/leeren/Verzeichnis</code></li>
+        </ul>
+
+        <h2>Fazit</h2>
+        <p>Die Linux-Befehle mkdir und rmdir sind grundlegende Werkzeuge zum Erstellen und Entfernen von Verzeichnissen im Dateisystem. Indem Sie diese Befehle und ihre Optionen kennenlernen und effektiv einsetzen, können Sie das Dateisystem besser verwalten und organisieren. Üben Sie die Verwendung dieser Befehle, um sich mit ihrer Funktionsweise vertraut zu machen und effizienter mit Verzeichnissen zu arbeiten.</p>
+     <div>
+	        <br>
+            <a class="button" href="../aufgaben/grundlegende-befehle.html">Zurück zur Aufgabe</a>
+      </div>
+	 </main>
+</div>
+</body>
+</html>

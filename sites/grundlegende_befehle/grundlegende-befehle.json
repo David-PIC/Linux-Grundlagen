@@ -1,0 +1,94 @@
+[ 
+ {
+     "type": "text",
+     "number": 1,
+     "title": "Verzeichnis wechseln",
+     "tutorial": "../tutorial/cd.html",
+     "question": "Wie wechseln Sie in das Verzeichnis /home/user?",
+     "answers": ["cd /home/user", "cd /home/user/"],
+     "input_id": "gb1",
+     "button_id": "gb1-button",
+     "result_id": "gb1-result"
+ },
+ {
+     "type": "text",
+     "question": "Wie wechseln Sie in das Home-Verzeichnis des aktuellen Benutzers?",
+     "answers": ["cd ~", "cd"],
+     "input_id": "gb2",
+     "button_id": "gb2-button",
+     "result_id": "gb2-result"
+ },
+ {
+     "type": "text",
+     "number": 2,
+     "title": "Dateien im aktuellen Verzeichnis anzeigen",
+     "tutorial": "../tutorial/ls.html",
+     "question": "Wie zeigen Sie die Dateien im Aktuellen Verzeichnis an? (bitte nur den Befehl ohne zusätzliche optionen)",
+     "answers": ["ls", "ls ."],
+     "input_id": "gb3",
+     "button_id": "gb3-button",
+     "result_id": "gb3-result"
+ },
+ {
+     "type": "text",
+     "question": "Wie zeigen Sie die Dateien im Verzeichnis /usr/local/bin an? (bitte nur den Befehl ohne zusätzliche optionen)",
+     "answers": ["ls /usr/local/bin", "ls /usr/local/bin/"],
+     "input_id": "gb4",
+     "button_id": "gb4-button",
+     "result_id": "gb4-result"
+ },
+ {
+     "type": "text",
+     "question": "Wie zeigen Sie die Dateien inklusive aller versteckten Dateien im aktuellen Verzeichnis an?",
+     "answers": ["ls -a", "ls . -a"],
+     "input_id": "gb5",
+     "button_id": "gb5-button",
+     "result_id": "gb5-result"
+ },
+ {
+     "type": "text",
+     "number": 3,
+     "title": "Aktuelles Verzeichnis anzeigen",
+     "tutorial": "../tutorial/pwd.html",
+     "question": "Wie zeigen Sie das aktuelle Verzeichnis an, in dem Sie sich befinden?",
+     "answers": ["pwd"],
+     "input_id": "gb6",
+     "button_id": "gb6-button",
+     "result_id": "gb6-result"
+ },
+ {
+     "type": "text",
+     "number": 4,
+     "title": "Verzeichnisse erstellen und entfernen",
+     "tutorial": "../tutorial/mkdir-rmdir.html",
+     "question": "Wie erstellen Sie ein neues Verzeichnis namens \"MeineDokumente\" im aktuellen Verzeichnis?",
+     "answers": ["mkdir MeineDokumente", "mkdir MeineDokumente/"],
+     "input_id": "gb7",
+     "button_id": "gb7-button",
+     "result_id": "gb7-result"
+ },
+ {
+     "type": "text",
+     "question": "Wie erstellen Sie ein neues Verzeichnis namens \"Arbeit\" im aktuellen Verzeichnis und gleichzeitig ein Unterverzeichnis namens \"Projekte\" innerhalb des \"Arbeit\"-Verzeichnisses?",
+     "answers": ["mkdir -p Arbeit/Projekte", "mkdir -p Arbeit/Projekte/"],
+     "input_id": "gb8",
+     "button_id": "gb8-button",
+     "result_id": "gb8-result"
+ },
+ {
+     "type": "text",
+     "question": "Wie entfernen Sie ein leeres Verzeichnis namens \"AlteDokumente\" im aktuellen Verzeichnis?",
+     "answers": ["rmdir AlteDokumente", "rmdir AlteDokumente/"],
+     "input_id": "gb9",
+     "button_id": "gb9-button",
+     "result_id": "gb9-result"
+ },
+ {
+     "type": "text",
+     "question": "Wie entfernen Sie ein leeres Verzeichnis namens \"AlteDokumente\" und seine übergeordneten Verzeichnisse vorausgesetzt, dass alle Verzeichnisse leer sind?",
+     "answers": ["rmdir -p AlteDokumente", "rmdir -p AlteDokumente/"],
+     "input_id": "gb10",
+     "button_id": "gb10-button",
+     "result_id": "gb10-result"
+ }
+]
