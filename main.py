@@ -6,6 +6,11 @@ app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def index():
+    template_dirs = [
+    os.path.join(app.root_path, 'templates'),
+    os.path.join(app.root_path, 'sites/index')
+    ]
+    app.jinja_loader = FileSystemLoader(template_dirs)
     return render_template('index.html')
 @app.route('/grundlegende-befehle')
 def grundlegende_befehle():
